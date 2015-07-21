@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>{{head.title}}</title>
+    <link href="./app/app.css" rel="stylesheet">
+</head>
+<body>
+    <div class="super-form">
+        <h2>{{content.title}}</h2>
+        <p>{{content.desc}}</p>
+        <form action="/" method="POST">
+            <textarea name="citylist" cols="30" rows="10"></textarea>
+            <input type="submit" id="submiter">
+        </form>
+        <span>
+	Named after a British India spy, Nain Singh who mapped tibet without being ever detected <br/>
+	Made for play @ NextDrop: Nick, Mevin &amp; Nikhila
+	</span>
+    </div>
+<script type="text/javascript" src="../app/jquery.min.js"></script>
+<script type="text/javascript">
+$("#submiter").click(function(){
+$('.backdrop').show();
+})    
+</script>
+<div class="backdrop">
+<div class="backdrop-content"><h2>Fetching all location, please be patient</h2></div>    
+</div>
+
+</body>
+</html>

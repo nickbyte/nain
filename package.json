@@ -1,0 +1,12 @@
+{
+    "name": "Nain",
+    "version": "0.0.1",
+    "description": "Small Geolocation Scraper, named after nain singh who mapped tibet undetected",
+    "main": "app.js",
+    "author": "Nicholas Francis",
+    "dependencies": {
+        "express": "latest",
+        "async-foreach":"latest",
+        "mustache-express":"latest"
+    }
+}
