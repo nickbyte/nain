@@ -79,4 +79,6 @@ app.get('/thankyou', function(req, res) {
     });
 })
 var server = http.createServer(app);
-server.listen(8080);
+server.listen(process.env.PORT || 3000, function(){
+  console.log('listening on', http.address().port);
+});
