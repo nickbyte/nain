@@ -4,7 +4,6 @@ var fs = require('fs');
 var bodyParser = require('body-parser');
 var path = require("path");
 var express = require('express');
-var openurl = require("openurl")
 var app = express();
 var forEach = require('async-foreach').forEach;
 var mustacheExpress = require('mustache-express');
@@ -79,6 +78,4 @@ app.get('/thankyou', function(req, res) {
     });
 })
 var server = http.createServer(app);
-server.listen(process.env.PORT || 3000, function(){
-  // console.log('listening on', http.address().port);
-});
+server.listen(8080);
